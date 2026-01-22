@@ -8,7 +8,7 @@ API_URL = "https://desksensor.azurewebsites.net/api/Desks"  # Replace with your 
 
 # Create and bind the socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-sock.bind(("0.0.0.0", UDP_PORT))
+sock.bind(("0.0.0.0", UDP_PORT)) # "0.0.0.0" binds to all interfaces
 
 print(f"Listening for UDP packets on all interfaces, port {UDP_PORT}...")
 
